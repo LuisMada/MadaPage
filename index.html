@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark">
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile-container">
+        <h1 class="name">Luis Madrid</h1>
+        <div class="profile-image-container">
+          <img src="luismadrid1x1.jpg?height=300&width=300" alt="Profile Photo" class="profile-image">
+        </div>
+        <p class="title">BS MIS Student at Ateneo de Manila University</p>
+
+        
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/luis-madrid-2808a5266/" aria-label="LinkedIn" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:luis.c.madrid@student.ateneo.edu" aria-label="Email" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> (+63) 977-700-4003</p>
+          <p><i class="fas fa-envelope"></i> luiscabmadrid@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <main class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>
+            Driven and detail-oriented Management Information Systems student specializing in Data
+            Science and Analytics, complemented by a Minor in Financial Management to bridge technical
+            expertise with strategic financial acumen.
+          </p>
+          <p>
+            Pursuing this interdisciplinary approach to effectively analyze and optimize financial systems
+            using data-driven insights. Recognized for academic excellence and leadership, with
+            experience in investment mentorship, research-based projects, and technical proficiency in
+            Python and Tableau.
+          </p>
+          <p>
+            Passionate about leveraging analytical and financial insights to solve complex problems,
+            enhance decision-making, and drive organizational success while mentoring others and
+            fostering innovation.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project-card">
+          <h3 class="project-title">
+            <a href="#" class="project-link">
+              AI-Powered Sentiment and Topic Analysis for Customer Reviews
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Sentiment Analysis</span>
+            <span class="tag">Automation</span>
+          </div>
+          
+          <p class="project-description">
+            A streamlined Python-based system for scraping, sentiment analysis, and Google Sheets
+            integration. Utilizes OpenAI and HuggingFace models.
+          </p>
+        </div>
+        
+        <div class="project-card">
+          <h3 class="project-title">
+            <a href="#" class="project-link">
+              Machine Learning Project on Wafer Defects
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </h3>
+          
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Neural Networks</span>
+          </div>
+          
+          <p class="project-description">
+            A machine learning project that uses classical machine learning algorithms and neural
+            networks to identify mixed-type wafer defects.
+          </p>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        
+        <div class="education-card">
+          <h3>Ateneo De Manila University</h3>
+          <p class="date">2022 - 2026</p>
+          <p class="degree">Bachelor of Science Major in Management Information Systems</p>
+        </div>
+        
+        <div class="education-card">
+          <h3>IESEG School of Management</h3>
+          <p class="date">2024 - 2025</p>
+          <p class="degree">International Business, Organizational Management, Data Science and Analytics</p>
+        </div>
+      </section>
+
+      <section id="leadership">
+        <h2>Leadership Experience</h2>
+        
+        <div class="experience-card">
+          <h3>Gawad Kalinga Ateneo Volunteers</h3>
+          <p class="position">Co-Founder | October 2023 - Present</p>
+          <ul class="experience-list">
+            <li>Co-founded a non-profit organization in partnership with Gawad Kalinga</li>
+            <li>Organized and led youth volunteer excursions across 6 rural communities</li>
+            <li>Grew the organization to 250 Active Members</li>
+          </ul>
+        </div>
+        
+        <div class="experience-card">
+          <h3>Beso Foods</h3>
+          <p class="position">Co-owner | April 2024 - Present</p>
+          <ul class="experience-list">
+            <li>Co-managing a food stall business generating an average of Php 80,000 monthly revenue</li>
+            <li>Designed 3D stall models and managed end-to-end social media marketing</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; <span id="current-year"></span> Luis Madrid C. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
