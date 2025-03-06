@@ -125,6 +125,7 @@ body {
 
 .contact-info p {
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
 .contact-info i {
