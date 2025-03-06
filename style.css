@@ -1,13 +1,13 @@
 /* Base styles and variables */
 :root {
-  --primary-color: #ffffff;
-  --text-color: #ffffff;
-  --text-secondary: #a1a1aa;
-  --bg-color: #18181b;
-  --card-bg-color: #27272a;
-  --border-color: #3f3f46;
-  --tag-bg-color: #3f3f46;
-  --hover-color: #e4e4e7;
+  --primary-color: #3b82f6; /* Blue primary color */
+  --text-color: #1f2937; /* Dark text for contrast */
+  --text-secondary: #6b7280; /* Gray secondary text */
+  --bg-color: #ffffff; /* White background */
+  --card-bg-color: #f9fafb; /* Light gray card background */
+  --border-color: #e5e7eb; /* Light border color */
+  --tag-bg-color: #e5e7eb; /* Light tag background */
+  --hover-color: #3b82f6; /* Blue hover color */
   --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --transition: all 0.3s ease;
   --sidebar-width: 300px;
@@ -41,11 +41,12 @@ body {
   height: 100vh;
   overflow-y: auto;
   padding: 2rem;
-  background-color: var(--bg-color);
+  background-color: #f0f9ff; /* Light blue background */
   border-right: 1px solid var(--border-color);
-  background-image: url('madapagerb2.png');
+  background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/madapagerb2-tSHDUkPXIggokcsPuK5IccqlxeKFGT.png");
   background-size: cover;
   background-position: center;
+  
 }
 
 /* Main content that scrolls */
@@ -65,7 +66,7 @@ body {
 
 .name {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
@@ -77,6 +78,7 @@ body {
   border-radius: 4px;
   margin-bottom: 1rem;
   border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image {
@@ -88,6 +90,7 @@ body {
 .title {
   font-size: 1.2rem;
   margin-bottom: 0rem;
+  color: #FFFF;
 }
 
 .social-links {
@@ -103,21 +106,21 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--card-bg-color);
-  color: var(--text-color);
+  background-color: var(--primary-color);
+  color: white;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .social-icon:hover {
-  background-color: var(--primary-color);
-  color: #27272a;
+  background-color: #2563eb; /* Darker blue on hover */
   transform: translateY(-3px);
 }
 
 .contact-info {
   margin-bottom: 1rem;
   font-size: 0.9rem;
+  color: #3b82f6;
 }
 
 .contact-info p {
@@ -126,7 +129,16 @@ body {
 
 .contact-info i {
   margin-right: 0.5rem;
-  color: var(--text-secondary);
+  color: var(--primary-color);
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 /* Sections */
@@ -144,6 +156,7 @@ h2 {
 
 .about-content p {
   margin-bottom: 1rem;
+  color: var(--text-color);
 }
 
 /* Projects */
@@ -154,16 +167,18 @@ h2 {
   margin-bottom: 1.5rem;
   border: 1px solid var(--border-color);
   transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-title {
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  color: var(--text-color);
 }
 
 .project-link {
@@ -176,7 +191,7 @@ h2 {
 }
 
 .project-link:hover {
-  color: var(--hover-color);
+  color: #2563eb; /* Darker blue on hover */
 }
 
 .project-link i {
@@ -201,7 +216,7 @@ h2 {
 
 .tag:hover {
   background-color: var(--primary-color);
-  color: #27272a;
+  color: white;
 }
 
 .project-description {
@@ -216,11 +231,12 @@ h2 {
   margin-bottom: 1.5rem;
   border: 1px solid var(--border-color);
   transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .education-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .education-card h3 {
@@ -235,8 +251,15 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+.subtitle {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
 .degree {
   font-size: 1rem;
+  color: var(--text-color);
 }
 
 /* Leadership Experience Section */
@@ -247,11 +270,12 @@ h2 {
   margin-bottom: 1.5rem;
   border: 1px solid var(--border-color);
   transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .experience-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .experience-card h3 {
@@ -269,6 +293,7 @@ h2 {
 .experience-list {
   list-style-position: inside;
   margin-left: 1rem;
+  color: var(--text-color);
 }
 
 .experience-list li {
