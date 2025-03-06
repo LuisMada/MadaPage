@@ -1,13 +1,13 @@
 /* Base styles and variables */
 :root {
-  --primary-color: #3b82f6; /* Blue primary color */
+  --primary-color: #407AB4; /* Blue primary color */
   --text-color: #1f2937; /* Dark text for contrast */
   --text-secondary: #6b7280; /* Gray secondary text */
   --bg-color: #ffffff; /* White background */
   --card-bg-color: #f9fafb; /* Light gray card background */
   --border-color: #e5e7eb; /* Light border color */
   --tag-bg-color: #e5e7eb; /* Light tag background */
-  --hover-color: #3b82f6; /* Blue hover color */
+  --hover-color: #2B639B; /* Blue hover color */
   --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --transition: all 0.3s ease;
   --sidebar-width: 300px;
@@ -113,7 +113,7 @@ body {
 }
 
 .social-icon:hover {
-  background-color: #2563eb; /* Darker blue on hover */
+  background-color: #2B639B; /* Darker blue on hover */
   transform: translateY(-3px);
 }
 
@@ -191,7 +191,7 @@ h2 {
 }
 
 .project-link:hover {
-  color: #2563eb; /* Darker blue on hover */
+  color: #2B639B; /* Darker blue on hover */
 }
 
 .project-link i {
